@@ -1,0 +1,30 @@
+name: Deploy Blog to GitHub Pages
+
+on:
+  push:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: pandoc/latex
+    steps:
+      - uses: actions/checkout@v2
+      - name: creates output
+        run: |
+          npm install
+          npm run build
+
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN }}
+        with:
+          source-directory: 'output/'
+          destination-github-username: 'SJU-Frontend-Study'
+          destination-repository-name: 'frontend-tech'
+          user-name: github-actions[bot]
+          user-email: 239391931+github-actions[bot]@users.noreply.github.com
+          target-branch: main
+          target-directory: docs/
+          commit-message: 'Update Blog Contents'
