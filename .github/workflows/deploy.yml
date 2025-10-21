@@ -11,9 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: creates output
-        run: |
-          npm install
-          npm run build
+        run: sh ./build.sh
 
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@main
