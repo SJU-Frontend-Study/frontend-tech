@@ -1,47 +1,12 @@
----
-sidebar_position: 1
----
+## SJU-Frontend-Study
 
-# Tutorial Intro
+프론트 스터디 내용을 다같이 정리하는 레포지토리
 
-Let's discover **Docusaurus in less than 5 minutes**.
+### 작성 규칙
 
-## Getting Started
+자세한 내용은 가이드라인을 참조하세요.
 
-Get started by **creating a new site**.
+### 작성 목적
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+- 세션 발표를 통해 자신이 이해한 것을 검증해요.
+- 공부한 내용을 다른 사람과 공유해요.
