@@ -14,7 +14,7 @@ function HomepageHeader() {
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
         <img
-          src="img/catCoding.png"
+          src="img/catcoding.png"
           alt=""
           className="logo"
           style={{ width: "120px", height: "120px" }}
