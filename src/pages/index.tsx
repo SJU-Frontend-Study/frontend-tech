@@ -17,7 +17,7 @@ function HomepageHeader() {
           src="img/catcoding.png"
           alt=""
           className="logo"
-          style={{ width: "120px", height: "120px" }}
+          style={{ width: "100px", height: "100px" }}
         />
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
